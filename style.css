@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+:root {
+  --primary: #fff;
+  --dark: #000;
+  --bg-color1: #010758;
+  --bg-color2: #490d61;
+  --bg-color3: #403d84;
+  --text-color1: #ff2963;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(45deg, var(--bg-color1), var(--bg-color2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container h1 {
+  color: var(--primary);
+  font-size: 45px;
+  font-weight: 500;
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+.container h1 span {
+  color: var(--text-color1);
+}
+textarea {
+  width: 600px;
+  height: 250px;
+  background: var(--bg-color3);
+  color: var(--primary);
+  font-size: 15px;
+  border: 0;
+  outline: 0;
+  padding: 20px;
+  border-radius: 10px;
+  resize: none;
+  margin-bottom: 30px;
+}
+textarea::placeholder {
+  font-size: 16px;
+  color: var(--primary);
+}
+.wrapper {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+button {
+  background: var(--text-color1);
+  color: var(--primary);
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 35px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+button i {
+  width: 16px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+select {
+  flex: 1;
+  color: var(--primary);
+  background: var(--bg-color3);
+  width: 60vw;
+  padding: 11px 20px;
+  outline: 0;
+  border: 0;
+  border-radius: 15px;
+  appearance: none;
+  z-index: 1;
+}
+.down {
+  font-size: 25px;
+  color: var(--primary);
+  position: relative;
+  left: -60px;
+  z-index: 1;
+}
